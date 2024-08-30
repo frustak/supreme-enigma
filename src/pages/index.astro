@@ -1,5 +1,49 @@
 ---
+import { ProductList } from '@/components/organizations/product-list';
+import '@/styles/globals.css';
 
+const products = [
+  {
+    image: "/images/products/1.jpg",
+    name: "ThreadNomad",
+    price: 19.99,
+  },
+  {
+    image: "/images/products/2.jpg",
+    name: "UrbanWhimsy",
+    price: 24.95,
+  },
+  {
+    image: "/images/products/3.jpg",
+    name: "VibeStitch",
+    price: 22.5,
+  },
+  {
+    image: "/images/products/4.jpg",
+    name: "EchoWave",
+    price: 18.75,
+  },
+  {
+    image: "/images/products/5.jpg",
+    name: "GraphicPulse",
+    price: 21.99,
+  },
+  {
+    image: "/images/products/6.jpg",
+    name: "CottonCraze",
+    price: 17.95,
+  },
+  {
+    image: "/images/products/7.jpg",
+    name: "InkFrenzy",
+    price: 26.5,
+  },
+  {
+    image: "/images/products/8.jpg",
+    name: "NovaThreads",
+    price: 23.99,
+  },
+];
 ---
 
 <html lang="en">
@@ -8,9 +52,11 @@
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
+		<title>...</title>
 	</head>
 	<body>
-		<h1>Astro</h1>
+    <section class="container py-8">
+      <ProductList products={products} />
+    </section>
 	</body>
 </html>
