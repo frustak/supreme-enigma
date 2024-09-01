@@ -9,6 +9,7 @@ import "@fontsource/source-sans-pro/400.css";
 import "@fontsource/source-sans-pro/600.css";
 import "@fontsource/source-sans-pro/700.css";
 import "@fontsource/source-sans-pro/900.css";
+import "lenis/dist/lenis.css";
 ---
 
 <html lang="en">
@@ -31,3 +32,14 @@ import "@fontsource/source-sans-pro/900.css";
     </ScrollArea>
   </body>
 </html>
+
+<script>
+  import Lenis from "lenis";
+
+  const lenis = new Lenis({ lerp: 0.2 });
+  function raf(time: number) {
+    lenis.raf(time);
+    requestAnimationFrame(raf);
+  }
+  requestAnimationFrame(raf);
+</script>
