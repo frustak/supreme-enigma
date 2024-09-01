@@ -1,4 +1,8 @@
+import { Separator } from "@radix-ui/react-separator";
+import { AddButton } from "../ui/add-button";
+
 type ProductData = {
+  id: string;
   image: string;
   name: string;
   price: number;
@@ -10,11 +14,18 @@ type Props = {
 
 export function ProductList({ products }: Props) {
   return (
-    <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-      {products.map((product) => (
-        <Product product={product} />
-      ))}
-    </div>
+    <section className="container">
+      <h2 className="text-2xl font-semibold font-display">Products</h2>
+      <h3 className="mt-1 text-sm text-muted-foreground">
+        Explore our latest collection
+      </h3>
+      <Separator className="my-4 h-px bg-border" />
+      <div className="grid grid-cols-1 gap-8 lg:gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+        {products.map((product) => (
+          <Product key={product.id} product={product} />
+        ))}
+      </div>
+    </section>
   );
 }
 
@@ -28,10 +39,15 @@ function Product({ product }: ProductProps) {
       <img
         src={product.image}
         alt={product.name}
-        className="rounded-md h-96 object-cover w-full"
+        className="object-cover w-full rounded-md h-96"
       />
-      <h3 className="text-sm font-medium mt-2">{product.name}</h3>
-      <h4 className="text-xs text-muted-foreground">${product.price}</h4>
+      <div className="flex items-center justify-between mt-2">
+        <div>
+          <h3 className="text-sm font-semibold">{product.name}</h3>
+          <h4 className="text-xs text-muted-foreground">${product.price}</h4>
+        </div>
+        <AddButton />
+      </div>
     </div>
   );
 }
