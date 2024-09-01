@@ -1,5 +1,4 @@
-import { Separator } from "@radix-ui/react-separator";
-import { AddButton } from "../ui/add-button";
+import { AddButton } from "../atoms/add-button";
 
 type ProductData = {
   id: string;
@@ -14,13 +13,12 @@ type Props = {
 
 export function ProductList({ products }: Props) {
   return (
-    <section className="container">
-      <h2 className="text-2xl font-semibold font-display">Products</h2>
+    <section className="container mt-20">
+      <h2 className="text-2xl font-semibold font-display">Featured T-Shirts</h2>
       <h3 className="mt-1 text-sm text-muted-foreground">
-        Explore our latest collection
+        Explore Our Bestsellers
       </h3>
-      <Separator className="my-4 h-px bg-border" />
-      <div className="grid grid-cols-1 gap-8 lg:gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+      <div className="grid grid-cols-1 gap-8 mt-6 lg:gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
         {products.map((product) => (
           <Product key={product.id} product={product} />
         ))}
