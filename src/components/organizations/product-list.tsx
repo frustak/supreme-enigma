@@ -42,7 +42,9 @@ function Product({ product }: ProductProps) {
       <div className="flex items-center justify-between mt-2">
         <div>
           <h3 className="text-sm font-semibold">{product.name}</h3>
-          <h4 className="text-xs text-muted-foreground">${product.price}</h4>
+          <h4 className="text-xs text-muted-foreground">
+            ${product.price.toFixed(2)}
+          </h4>
         </div>
         <AddButton />
       </div>
