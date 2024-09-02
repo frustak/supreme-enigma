@@ -1,5 +1,4 @@
 ---
-import { Hero } from "@/components/organizations/hero";
 import { ProductList } from "@/components/organizations/product-list";
 import Layout from "@/layouts/layout.astro";
 
@@ -56,12 +55,9 @@ const products = [
 ---
 
 <Layout>
-  <Hero />
-  <div class="mt-24">
-    <ProductList
-      heading="Featured T-Shirts"
-      subheading="Explore our bestsellers"
-      products={products}
-    />
-  </div>
+  <ProductList
+    heading="Explore Our T-Shirts"
+    subheading="Find the perfect t-shirt to match your style"
+    products={products}
+  />
 </Layout>

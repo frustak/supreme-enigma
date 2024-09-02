@@ -2,9 +2,9 @@ import { IconInnerShadowRightFilled } from "@tabler/icons-react";
 
 export function Logo() {
   return (
-    <div className="relative">
-      <IconInnerShadowRightFilled className="absolute right-full" />
-      <h1 className="font-bold lowercase font-display ml-2">IDKTNY</h1>
-    </div>
+    <a href="/" className="relative group">
+      <IconInnerShadowRightFilled className="absolute transition-transform duration-300 right-full group-hover:rotate-45" />
+      <h1 className="ml-2 font-bold lowercase font-display">IDKTNY</h1>
+    </a>
   );
 }

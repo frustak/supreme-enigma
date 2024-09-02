@@ -1,4 +1,5 @@
-import { Button } from "../ui/button";
+import { cn } from "@/lib/utils";
+import { buttonVariants } from "../ui/button";
 
 export function Hero() {
   return (
@@ -8,14 +9,22 @@ export function Hero() {
           Wear Your Story
         </h2>
         <h3 className="text-sm lg:text-base mt-1.5 text-muted-foreground grow">
-          Premium quality t-shirts that fit your style.
+          Premium quality t-shirts that fit your style
         </h3>
-        <Button className="w-full mt-4 lg:w-auto">Find Your Style</Button>
+        <a
+          href="/shop"
+          className={cn(
+            buttonVariants({ variant: "default" }),
+            "w-full mt-4 lg:w-auto",
+          )}
+        >
+          Find Your Style
+        </a>
       </div>
       <img
         src="/images/hero.jpg"
         alt=""
-        className="rounded-lg place-self-end h-[50vh] w-full object-cover"
+        className="rounded-lg place-self-end h-[min(50vh,64rem)] w-full object-cover"
       />
     </section>
   );
