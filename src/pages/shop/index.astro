@@ -1,0 +1,13 @@
+---
+import { ProductList } from "@/components/organizations/product-list";
+import products from "@/content/products/products.json";
+import Layout from "@/layouts/layout.astro";
+---
+
+<Layout>
+  <ProductList
+    heading="Explore Our T-Shirts"
+    subheading="Find the perfect t-shirt to match your style"
+    products={products}
+  />
+</Layout>

@@ -1,0 +1,58 @@
+[
+  {
+    "id": "1",
+    "slug": "thread-nomad-1",
+    "image": "/images/products/1.jpg",
+    "name": "ThreadNomad",
+    "price": 19.99
+  },
+  {
+    "id": "2",
+    "slug": "urban-whimsy-2",
+    "image": "/images/products/2.jpg",
+    "name": "UrbanWhimsy",
+    "price": 24.95
+  },
+  {
+    "id": "3",
+    "slug": "vibe-stitch-3",
+    "image": "/images/products/3.jpg",
+    "name": "VibeStitch",
+    "price": 22.5
+  },
+  {
+    "id": "4",
+    "slug": "echo-wave-4",
+    "image": "/images/products/4.jpg",
+    "name": "EchoWave",
+    "price": 18.75
+  },
+  {
+    "id": "5",
+    "slug": "graphic-pulse-5",
+    "image": "/images/products/5.jpg",
+    "name": "GraphicPulse",
+    "price": 21.99
+  },
+  {
+    "id": "6",
+    "slug": "cotton-craze-6",
+    "image": "/images/products/6.jpg",
+    "name": "CottonCraze",
+    "price": 17.95
+  },
+  {
+    "id": "7",
+    "slug": "ink-frenzy-7",
+    "image": "/images/products/7.jpg",
+    "name": "InkFrenzy",
+    "price": 26.5
+  },
+  {
+    "id": "8",
+    "slug": "nova-threads-8",
+    "image": "/images/products/8.jpg",
+    "name": "NovaThreads",
+    "price": 23.99
+  }
+]
